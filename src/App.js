@@ -10,7 +10,7 @@ import ActiveUsers from "./components/activeUsers";
 import OrderComponent from "./components/orders";
 import HomePage from "./components/home";
 import CategoryPage from "./components/CategoryPage";
-import CriticalPage from "./components/critical-financial-tips";
+import CriticalPage from "./components/criticaltips";
 import AboutPage from "./components/about-us";
 import TestingPage from "./components/privacy";
 import Account from "./components/account";
@@ -28,9 +28,9 @@ const App = () => {
         <Route path="/items" element={<ItemDetail/>} />
         <Route path="/addItem" element={<AddItems/>} />
         <Route path="/category/:category" element={<CategoryPage />} /> 
-        <Route path="/critical-financial-tips" element={<CriticalPage />} />
-		<Route path="/about-us" element={<AboutPage />} />
-		<Route path="/privacy" element={<TestingPage />} />
+        <Route path="/criticaltips" element={<CriticalPage />} />
+		    <Route path="/about-us" element={<AboutPage />} />
+		    <Route path="/privacy" element={<TestingPage />} />
         <Route path="/sports" element={<CategoryPage />} />
         <Route path="/cars" element={<CategoryPage />} />
         <Route path="/food" element={<CategoryPage />} />

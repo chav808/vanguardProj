@@ -58,6 +58,7 @@ const HomePage = () => {
     fetchItems();
   }, []);
 
+
 /*  const handleTabChange = (event, newValue) => {
     setValue(newValue);
 
@@ -85,6 +86,7 @@ const HomePage = () => {
     }
   };
 */
+
   const handleItemClick = (item) => {
     navigate(`/item/${item.id}`);
   };
@@ -104,11 +106,11 @@ const HomePage = () => {
             .filter((item) => !category || item.category === category)
             .map((item) => (
               <Grid item key={item.id} xs={12} sm={6} md={4}>
-               <Card onClick={() => handleItemClick(item)}>
+                <Card onClick={() => handleItemClick(item)}>
                   {item.imageUrl ? (
                     <CardMedia
                       component="img"
-                      height="300"
+                      height="3000"
                       image={item.imageUrl}
                       alt={item.title}
                     />

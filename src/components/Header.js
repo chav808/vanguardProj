@@ -13,7 +13,8 @@ import { Link as RouterLink } from "react-router-dom";
 import SearchIcon from "@mui/icons-material/Search";
 import InputAdornment from "@mui/material/InputAdornment";
 import IconButton from "@mui/material/IconButton";
-import logo from "../assets/bidverse.png";
+
+import logo from "../assets/dollarFollowerLogo.png";
 import background from "../assets/background.png";
 import ItemList from "./searchBarFunc";
 
@@ -31,6 +32,7 @@ const Header = ({ value, handleTabChange, searchTerm, handleSearch }) => {
     marginBottom: "0rem",
     marginTop: "1rem",
     width: "auto",
+
   };
 
   const headerStyle = {
@@ -49,9 +51,10 @@ const Header = ({ value, handleTabChange, searchTerm, handleSearch }) => {
         textColor="inherit"
       >
         <Tab
-          label="Welcome"
+
+          label="Orders"
           component={RouterLink}
-          to="/home"
+          to="/orders"
           sx={{
             fontWeight: "bold",
             fontSize: "1rem",
@@ -123,6 +126,11 @@ const Header = ({ value, handleTabChange, searchTerm, handleSearch }) => {
         }}
       >
         <Tab
+          label="Critical Tips"
+          component={RouterLink}
+          to="/criticaltips"
+          sx={{ fontSize: "1.5rem", fontWeight: "bold" }}
+        />
           label="Critical Financial Tips"
           component={RouterLink}
           to="/critical-financial-tips"

@@ -10,7 +10,8 @@ import {
 import { Container, Typography, TextField, Button, Link } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import logo from "../assets/bidverse.png";
+import logo from "../assets/dollarFollowerLogo.png";
+
 
 const LoginPage = () => {
   const auth = getAuth();
@@ -69,9 +70,9 @@ const LoginPage = () => {
   };
 
   const logoStyle = {
-    height: "100px",
-    marginBottom: "0rem",
-    marginTop: "1rem",
+    height: "500px",
+    marginBottom: "-10rem",
+    marginTop: "-8rem",
     width: "auto",
   };
 
