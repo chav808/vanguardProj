@@ -1,10 +1,11 @@
+import Header from "./Header";
 import logo from "../assets/dollarFollowerLogo.png";
 
 import React, {useState} from 'react'
 const Critical = () => {
     return (
         <> 
-        <center><></>Crtitical Tips</center>
+		<Header />
             <body>
             <h3>Student Loans</h3>       
             <p> 
