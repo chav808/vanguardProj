@@ -1,2 +1,2 @@
 # vanguardProj
-Merge quickly before you can no longer push and pull.
+Merge quickly before your body can no longer push and pull.
