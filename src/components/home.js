@@ -58,16 +58,15 @@ const HomePage = () => {
     fetchItems();
   }, []);
 
-  const handleTabChange = (event, newValue) => {
+
+/*  const handleTabChange = (event, newValue) => {
     setValue(newValue);
 
     const categories = [
-      "electronics",
-      "sports",
-      "cars",
-      "food",
-      "toys",
-      "furniture",
+      "critical",
+      "spots",
+      "budget",
+      "discounts",
     ];
     setCategory(categories[newValue] || "");
 
@@ -86,10 +85,12 @@ const HomePage = () => {
       navigate("");
     }
   };
+*/
 
   const handleItemClick = (item) => {
     navigate(`/item/${item.id}`);
   };
+
 
   return (
     <>

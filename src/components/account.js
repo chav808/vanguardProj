@@ -3,6 +3,7 @@ import { Box, Typography, Container, Tab, Tabs, Paper } from '@mui/material';
 import { auth } from '../Config/firebase';
 import { useNavigate } from 'react-router-dom';
 import UserInformation from './userInformation';
+import Header from "./Header";
 import PaymentOptions from './paymentOptions';
 
 
@@ -62,7 +63,6 @@ const Account = () => {
             <Tab label="Help" />
             <Tab label="Privacy" />
             <Tab label="Security" />
-            
           </Tabs>
         </Paper>
       </Box>

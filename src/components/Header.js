@@ -13,6 +13,7 @@ import { Link as RouterLink } from "react-router-dom";
 import SearchIcon from "@mui/icons-material/Search";
 import InputAdornment from "@mui/material/InputAdornment";
 import IconButton from "@mui/material/IconButton";
+
 import logo from "../assets/dollarFollowerLogo.png";
 import background from "../assets/background.png";
 import ItemList from "./searchBarFunc";
@@ -27,13 +28,11 @@ const Header = ({ value, handleTabChange, searchTerm, handleSearch }) => {
   };
 
   const logoStyle = {
-    alignItems: "center",
-    justifyContent: "center",
-    height: "500px",
-    marginBottom: "-9rem",
-    marginTop: "-9rem",
+    height: "100px",
+    marginBottom: "0rem",
+    marginTop: "1rem",
     width: "auto",
-    
+
   };
 
   const headerStyle = {
@@ -52,6 +51,7 @@ const Header = ({ value, handleTabChange, searchTerm, handleSearch }) => {
         textColor="inherit"
       >
         <Tab
+
           label="Orders"
           component={RouterLink}
           to="/orders"
@@ -61,9 +61,9 @@ const Header = ({ value, handleTabChange, searchTerm, handleSearch }) => {
           }}
         />
         <Tab
-          label="Help"
+          label="About Us"
           component={RouterLink}
-          to="/help"
+          to="/about-us"
           sx={{
             fontWeight: "bold",
             fontSize: "1rem",
@@ -131,40 +131,27 @@ const Header = ({ value, handleTabChange, searchTerm, handleSearch }) => {
           to="/criticaltips"
           sx={{ fontSize: "1.5rem", fontWeight: "bold" }}
         />
-        <Tab
-          label="Sports"
+          label="Critical Financial Tips"
           component={RouterLink}
-          to="/category/sports"
+          to="/critical-financial-tips"
           sx={{ fontSize: "1.5rem", fontWeight: "bold" }}
         />
         <Tab
-          label="Cars"
+          label="Spots for Me"
           component={RouterLink}
-          to="/category/cars"
+          to="/spots-for-me"
           sx={{ fontSize: "1.5rem", fontWeight: "bold" }}
         />
         <Tab
-          label="Food"
+          label="Budget Analyzer"
           component={RouterLink}
-          to="/category/food"
+          to="/budget-analyzer"
           sx={{ fontSize: "1.5rem", fontWeight: "bold" }}
         />
-        <Tab
-          label="Toys"
+		<Tab
+          label="Weekly Discounts"
           component={RouterLink}
-          to="/category/toys"
-          sx={{ fontSize: "1.5rem", fontWeight: "bold" }}
-        />
-        <Tab
-          label="Furniture"
-          component={RouterLink}
-          to="/category/furniture"
-          sx={{ fontSize: "1.5rem", fontWeight: "bold" }}
-        />
-        <Tab
-          label="Post an Item"
-          component={RouterLink}
-          to="/addItem"
+          to="/weekly-discounts"
           sx={{ fontSize: "1.5rem", fontWeight: "bold" }}
         />
       </Tabs>

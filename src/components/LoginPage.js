@@ -12,6 +12,7 @@ import { Link as RouterLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import logo from "../assets/dollarFollowerLogo.png";
 
+
 const LoginPage = () => {
   const auth = getAuth();
   const navigate = useNavigate();
